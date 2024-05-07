@@ -1,0 +1,29 @@
+1. The IKEv1 KDF Test (NO VPN connection is used in the device ) [N/A]
+   Evaluates the Key Derivation Function in IKEv1 for #* securing VPN communication channels.
+
+2. The IKEv2 KDF Test (NO VPN is used in the device )[N/A]
+   Similar to IKEv1, tests the Key Derivation Function for cryptographic key generation in IKEv2, #* focusing on VPN security.
+
+3. The TLS KDF Test (Currently device is using FTP for future developments SFTP or FTPS will be used)[N/A]
+   Assesses the Key Derivation Function within TLS protocol, 
+   ensuring secure encryption key derivation with attention to security, performance, and compatibility.
+
+4. The ANS X9.63-2001 KDF Test (Verified) 
+   Validates compliance with ANS X9.63-2001 standard, ensuring security and properties of the specified key derivation functions.
+
+5. The SSH KDF Test(No SSH is directly developed for the end user)[N/A]
+   Verifies the secure implementation of the Key Derivation Function in #* SSH, which generates keys for secure communication.
+
+6. The SRTP KDF Test (NO SRTP is used in the device )[N/A]
+   Examines the Key Derivation Function within #* SRTP to secure real-time media streams, assessing both security and efficiency.
+
+7. The SNMP KDF Test (NO SNMP is used in the device )[N/A]
+   Reviews the Key Derivation Function used in #* SNMP, ensuring the security of key generation for managing network devices.
+
+8. The TPM KDF Test (NO TPM is used in the device )[N/A]
+   Assesses the Key Derivation Mechanisms within #* TPM, a hardware security module, focusing on key generation's security and integrity.
+   
+   
+   
+   
+   UPTO THE STANDARD OF NIST SP 800-135

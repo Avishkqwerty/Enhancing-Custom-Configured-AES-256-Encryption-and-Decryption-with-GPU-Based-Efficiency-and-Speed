@@ -1,0 +1,93 @@
+Composition of 2 KDFs are sued in this component:
+
+HKDF + Scrypt (Sequentially)
+The process of concatenation is used in this mechanism
+
+>>Factors effecting the time consumption of the concatenated KDFs:
+
+Iteratioion Count;
+Hardware Performance;
+Hash fucntion;
+
+>> Improved factors of using concatenated composition;
+
+>Security;
+
+*HKDF is a well-regarded KDF that provides a secure way 
+to derive keys from a master key or other input. 
+It offers cryptographic strength and supports different hash functions. 
+By incorporating HKDF into the key derivation process, 
+the overall security of the derived keys can be enhanced.
+
+>Key Expansion;
+
+*HKDF is designed to support key expansion, 
+allowing a small amount of input material (e.g., a master key) 
+to generate a larger set of keys. This can be useful when deriving 
+multiple keys for various purposes, such as encryption keys, 
+authentication keys, or session keys.
+
+>Flexibility;
+
+*HKDF is a flexible KDF that can accommodate different hash functions 
+based on specific security requirements. It allows for the use of secure 
+and widely accepted hash functions like SHA-256 or SHA-512, providing 
+flexibility in adapting to different environments.
+
+# n #
+
+This parameter represents the CPU/memory cost factor. 
+It should be a power of 2 and typically ranges from 2 to 2^20. 
+A higher value increases the time and memory required to compute the derived key. 
+A commonly used value is 16384 (2^14).
+
+# r #
+
+This parameter represents the block size. 
+It should be a positive integer. A higher value increases the amount of memory required. 
+A commonly used value is 8.
+
+# p #
+
+This parameter represents the parallelization factor. 
+It should be a positive integer. 
+A higher value increases the amount of parallelism and can be useful for multi-core systems. 
+A commonly used value is 1.
+
+
+Poosible values for r, p and n:
+
+r=1, p=1, n=2
+r=1, p=2, n=2
+r=1, p=4, n=2
+r=1, p=8, n=2
+r=1, p=16, n=2
+r=1, p=32, n=2
+r=1, p=64, n=2
+r=1, p=128, n=2
+r=1, p=256, n=2
+r=1, p=512, n=2
+r=1, p=1024, n=2
+r=1, p=2048, n=2
+r=1, p=4096, n=2
+r=1, p=8192, n=2
+r=1, p=16384, n=2
+r=2, p=1, n=2
+r=4, p=1, n=2
+r=8, p=1, n=2
+r=16, p=1, n=2
+r=32, p=1, n=2
+r=64, p=1, n=2
+r=128, p=1, n=2
+r=256, p=1, n=2
+r=512, p=1, n=2
+r=1024, p=1, n=2
+r=2048, p=1, n=2
+r=4096, p=1, n=2
+r=8192, p=1, n=2
+r=16384, p=1, n=2
+r=32768, p=1, n=2
+
+These combinations ensure that r * p is less than 2**30 and n is a power of two greater than 1.
+
+

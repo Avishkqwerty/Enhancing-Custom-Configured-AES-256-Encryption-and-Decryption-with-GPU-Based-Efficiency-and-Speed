@@ -1,0 +1,37 @@
+##########The security factor is increased. ##########
+
+*********KDF Section*********
+
+1. The security of the KDF is improved using the input password and the salt (using the password and salt policy).
+
+2. Using SHA 256
+
+3. Shannon's entropy formula testing was performed (always the entropy level is higher than the existing KDFs, e.g., PBKDF2, bcrypt, Argon2, etc.).
+
+4. The value of "N (CPU/memory cost factor) " is increasing, therefore higher.
+The value of N provides better resistance against brute-force and other attacks.
+
+5.HKDF is a well-regarded KDF that provides a secure way to derive keys from a master key or other input.
+
+
+*********KDF + Salted Hashing + Encryption Section*********
+
+1. Use of AES 256
+
+
+
+
+
+##########Efficiency is increased. ##########
+
+1. Key Expansion is Increased (HKDF is designed to support key expansion).
+
+2. Flexibility is increased (HKDF is designed to support key expansion).
+
+3. Use of parallel processing for the final device to decrease the time-consuming factor for the iterations
+
+
+
+
+
+

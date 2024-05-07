@@ -1,0 +1,64 @@
+#OUTPUT OF THE ENTROPY TEST#
+
+(base) avishkabandara@avishkas-MacBook-Air SLIIT % /Users/avishkabandara/anaconda3/bin/python /Users/avishkabandara/Desktop/entropy.py
+Custom Derived Key: b6f4c8b607a22cda13acf501a30b0d3cccbbe0304d3b0732745742c08fb34693
+Custom Derived Key Entropy: 4.875
+Existing Derived Key 1 Entropy: 4.875
+Existing Derived Key 2 Entropy: 4.8125
+(base) avishkabandara@avishkas-MacBook-Air SLIIT % /Users/avishkabandara/anaconda3/bin/python /Users/avishkabandara/Desktop/entropy.py
+(base) avishkabandara@avishkas-MacBook-Air SLIIT % /Users/avishkabandara/anaconda3/bin/python /Users/avishkabandara/Desktop/entropy.py
+Custom Derived Key: 92838f81da710a2d7c456c00eca10d12ee4a5ddbf8551bcebd70c94d10cd18e6
+Custom Derived Key Entropy: 5.0
+Existing Derived Key 1 Entropy: 4.8125
+Existing Derived Key 2 Entropy: 4.788909765557392
+(base) avishkabandara@avishkas-MacBook-Air SLIIT % /Users/avishkabandara/anaconda3/bin/python /Users/avishkabandara/Desktop/entropy.py
+Custom Derived Key: 8a50502631849ba984bd1c2c66bbc0817f219949c018f5e4a5c3abed1552500e
+Custom Derived Key Entropy: 4.726409765557392
+Existing Derived Key 1 Entropy: 4.875
+Existing Derived Key 2 Entropy: 4.8125
+(base) avishkabandara@avishkas-MacBook-Air SLIIT % /Users/avishkabandara/anaconda3/bin/python /Users/avishkabandara/Desktop/entropy.py
+Custom Derived Key: 6af759750cdc71dbb95a883fe4da3d8211b4acda43b208bce35635a0ab9e9d47
+Custom Derived Key Entropy: 4.9375
+Existing Derived Key 1 Entropy: 4.9375
+Existing Derived Key 2 Entropy: 4.8125
+(base) avishkabandara@avishkas-MacBook-Air SLIIT % /Users/avishkabandara/anaconda3/bin/python /Users/avishkabandara/Desktop/entropy.py
+Custom Derived Key: 8e4a7a1776d2dc15fc9c749c73ee19b5411c1722c821820934bc476f5de47877
+Custom Derived Key Entropy: 4.875
+Existing Derived Key 1 Entropy: 4.75
+Existing Derived Key 2 Entropy: 5.0
+(base) avishkabandara@avishkas-MacBook-Air SLIIT % /Users/avishkabandara/anaconda3/bin/python /Users/avishkabandara/Desktop/entropy.py
+Custom Derived Key: 22201527d0cb0efbbf9cd497baf7f03c095562e12b1095c47c3ba1aec23accfa
+Custom Derived Key Entropy: 5.0
+Existing Derived Key 1 Entropy: 4.9375
+Existing Derived Key 2 Entropy: 4.9375
+
+
+
+
+
+#CONCULUDED OUTPUT AFTER ENTROPY TEST#
+
+Custom Derived Key Entropy:
+The entropy of the custom derived key seems to be around 4.7 to 5.0, which indicates a reasonably high level of randomness and unpredictability in the key.
+Higher entropy values are generally desirable, as they indicate that the key is more secure and less susceptible to various attacks.
+
+
+
+Existing Derived Key 1 Entropy (hashlib.pbkdf2_hmac):
+The entropy of the first existing derived key seems to range from around 4.75 to 4.9375.
+These entropy values are also relatively high and suggest good randomness in the derived key.
+
+
+
+Existing Derived Key 2 Entropy (scrypt.hash):
+The entropy of the second existing derived key fluctuates around 4.8125.
+This value is slightly lower than the previous two, indicating that this derived key might have slightly less randomness.
+
+
+
+
+#FINAL CONCLUSION#
+
+Based on the provided entropy values, we can make an assessment that the custom derived key is generally 
+more secure than the existing derived keys (both key 1 and key 2). Higher entropy values indicate a higher 
+degree of randomness and unpredictability in the keys, which is a desirable property for cryptographic keys.
